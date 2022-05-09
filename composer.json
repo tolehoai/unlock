@@ -1,0 +1,17 @@
+{
+    "name": "tolehoai/unlock",
+    "autoload": {
+        "psr-4": {
+            "Tolehoai\\Unlock\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "tolehoai"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "squizlabs/php_codesniffer": "3.*"
+    }
+}
