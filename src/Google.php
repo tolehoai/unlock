@@ -5,8 +5,12 @@ namespace Tolehoai\Mvc;
 class Google implements Provider
 {
 
-    public function sendSMS($sms)
+    /**
+     * @param $sms
+     * @return string
+     */
+    public function sendSMS($sms): string
     {
-       echo "Send SMS from Google Service: ". $sms;
+       return "Send SMS from Google Service: ". $sms;
     }
 }
