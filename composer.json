@@ -1,13 +1,14 @@
 {
-    "name": "tolehoai/unlock",
+    "name": "tolehoai/mvc",
     "autoload": {
         "psr-4": {
-            "Tolehoai\\Unlock\\": "src/"
+            "Tolehoai\\Mvc\\": "./src"
         }
     },
     "authors": [
         {
-            "name": "tolehoai"
+            "name": "tolehoai",
+            "email": "tolehoai@gmail.com"
         }
     ],
     "require": {},
