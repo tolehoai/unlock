@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 use Tolehoai\Mvc\Math;
-use Tolehoai\Mvc\User;
+
 class MathTest extends TestCase
 {
 
