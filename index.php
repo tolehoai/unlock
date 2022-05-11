@@ -12,26 +12,3 @@ $tolehoai = new User(new Google);
 $tolehoai->send("Hello, My name is Hoai.");
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-//$app = new Application();
-//
-//$router = new Router();
-//
-//$app->userRoute($router);
-//
-//$router->get('/',function(){
-//    return 'Hello World';
-//});
-//
-//$app->run();
