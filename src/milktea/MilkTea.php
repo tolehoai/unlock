@@ -49,6 +49,4 @@ class MilkTea
         echo "Name: " .$this->getMaterial()."<br> Price: ".$this->getPrice()." VND<br>";
     }
 
-
-
 }
