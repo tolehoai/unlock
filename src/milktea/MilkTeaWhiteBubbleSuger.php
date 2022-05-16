@@ -2,14 +2,14 @@
 
 namespace Tolehoai\Mvc\milktea;
 
-class MilkTeaWhiteBubbleSuger extends MilkTea
+class MilkTeaWhiteBubbleSugar extends MilkTea
 {
     protected int $price;
     protected string $material;
     public function __construct()
     {
         $this->price=parent::getPrice()+10000;
-        $this->price=parent::getMaterial()+" White Bubble Suger";
+        $this->price=parent::getMaterial()+" White Bubble Sugar";
     }
     /**
      * @return int|string
