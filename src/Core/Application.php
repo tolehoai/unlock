@@ -6,7 +6,8 @@ class Application
 {
     public Route $route;
     public Request $request;
-    public function __construct()
+    public static string $ROOT_DIR;
+    public function __construct($rootPath)
     {
         $this->request = new Request();
         $this->route = new Route($this->request );

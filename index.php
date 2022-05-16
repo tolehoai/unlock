@@ -7,7 +7,7 @@ require 'vendor/autoload.php';
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
-$app = new Application();
+$app = new Application(dirname(__DIR__));
 
 
 
@@ -23,10 +23,8 @@ $app->route->get('/404',function(){
 });
 
 
-
-
-
 $app->run();
+
 
 
 
