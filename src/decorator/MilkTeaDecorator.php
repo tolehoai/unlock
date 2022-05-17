@@ -5,11 +5,11 @@ namespace Tolehoai\Mvc\decorator;
 
 abstract class  MilkTeaDecorator implements MilkteaInterface
 {
-    protected  $milkTea;
+    protected  $topping;
 
-    public function __construct(MilkTea $milkTea)
+    public function __construct($topping)
     {
-        $this->milkTea=$milkTea;
+        $this->topping=$topping;
     }
 
 
