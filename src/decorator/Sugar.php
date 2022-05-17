@@ -4,21 +4,21 @@ namespace Tolehoai\Mvc\decorator;
 
 class Sugar extends MilkTeaDecorator
 {
-    protected  $milkTea;
+    protected  $topping;
 
-    public function __construct( $milkTea)
+    public function __construct( $topping)
     {
-        $this->milkTea=$milkTea;
+        $this->topping=$topping;
     }
 
 
     public function getPrice() :int
     {
-        return 2000 +$this->milkTea->getPrice();
+        return 2000 +$this->topping->getPrice();
     }
     public function getName() :string
     {
 
-        return $this->milkTea->getName() . " Suger";
+        return $this->topping->getName() . " Suger";
     }
 }
