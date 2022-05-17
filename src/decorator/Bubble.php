@@ -4,22 +4,22 @@ namespace Tolehoai\Mvc\decorator;
 
 class Bubble extends MilkTeaDecorator
 {
-    protected $milkTea;
+    protected $topping;
 
-    public function __construct( $milkTea)
+    public function __construct( $topping)
     {
-        $this->milkTea=$milkTea;
+        $this->topping=$topping;
     }
 
 
     public function getPrice() :int
     {
-        return  8000 + $this->milkTea->getPrice();
+        return  8000 + $this->topping->getPrice();
     }
 
     public function getName() :string
     {
-        return $this->milkTea->getName() ." Bubble";
+        return $this->topping->getName() ." Bubble";
     }
 
 }
