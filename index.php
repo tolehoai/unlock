@@ -1,12 +1,23 @@
 <?php
 
-use Tolehoai\Mvc\User;
-use Tolehoai\Mvc\Google;
-use Tolehoai\Mvc\Aws;
+use Tolehoai\Mvc\decorator\MilkTea;
+use Tolehoai\Mvc\decorator\Bubble;
+use Tolehoai\Mvc\decorator\Sugar;
+
+
 
 require 'vendor/autoload.php';
 
-$tolehoai = new User(new Google);
-echo($tolehoai->send("Hello, My name is Hoai."));
+
+$milkTea = new Sugar(new Bubble(new MilkTea())) ;
+echo "Name: ". $milkTea->getName();
+echo "<br/>";
+echo "Price: ".$milkTea->getPrice() ." VND";
+
+
+
+
+
+
 
 
